@@ -1,0 +1,15 @@
+header{
+background: rgb(1,0,24);
+background: linear-gradient(330deg, rgba(1,0,24,1) 0%, rgb(0, 0, 1) 84%, rgb(5, 5, 61) 100%, rgba(0,212,255,1) 100%);
+filter: drop-shadow(2px 1px 4px rgb(0, 0, 0));
+}
+
+/* utilities */
+
+.text_shadow{
+text-shadow: 10px 10px 10px rgba(0,0,0,0.8);
+}
+
+.strong_drop_shadow{
+    filter: drop-shadow(10px 10px 10px rgba(18, 18, 18, 0.8));
+}

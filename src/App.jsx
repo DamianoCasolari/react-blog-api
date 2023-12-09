@@ -1,12 +1,16 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import { AppHeader } from "./components/appHeader.jsx";
+import { AppMain } from "./components/appMain.jsx";
+import { AppFooter } from "./components/appFooter.jsx";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <></>;
+  return (
+    <>
+      <AppHeader></AppHeader>
+      <AppMain></AppMain>
+      <AppFooter></AppFooter>
+    </>
+  );
 }
 
 export default App;

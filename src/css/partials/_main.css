@@ -1,0 +1,18 @@
+main {
+  min-height: calc(100vh - 200px);
+}
+
+.post {
+  background: rgb(1, 0, 24);
+  background: linear-gradient(
+    143deg,
+    rgb(0, 0, 0) 0%,
+    rgb(2, 2, 9) 84%,
+    rgb(5, 5, 54) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+
+  filter: drop-shadow(2px 1px 4px rgb(0, 0, 0));
+
+  cursor: pointer;
+}

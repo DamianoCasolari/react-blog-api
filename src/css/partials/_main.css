@@ -3,6 +3,9 @@ main {
 }
 
 .post {
+  border-left: 2px;
+  border-top: 2px;
+  border-color: yellow;
   background: rgb(1, 0, 24);
   background: linear-gradient(
     143deg,
@@ -11,8 +14,31 @@ main {
     rgb(5, 5, 54) 100%,
     rgba(0, 212, 255, 1) 100%
   );
-
-  filter: drop-shadow(2px 1px 4px rgb(0, 0, 0));
-
+  filter: drop-shadow(-2px -1px 1px rgb(210, 238, 98));
   cursor: pointer;
+  &:hover{
+      filter: drop-shadow(0px 9px 5px rgb(210, 238, 98));
+
+  }
+}
+
+.add_post_btn {
+  font-weight: bold;
+  transition-duration: 2s;
+  &:hover svg {
+    animation: slide 2s infinite ease-in-out;
+  }
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.rotation_effect{
+  animation: slide 2s infinite ease-in-out;
+}
+
+@keyframes slide {
+  100% {
+    transform: rotateY(360deg);
+  }
 }

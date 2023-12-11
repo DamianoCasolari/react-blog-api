@@ -61,7 +61,13 @@ export function AppMain() {
                     <p className="text-end text-stone-100">{post.content}</p>
                     <div className="tags_container flex flex-wrap">
                       <div className="font-bold text-stone-100">
-                        {post.tags.map((tag) => tag.name)}
+                        {post.tags.map((tag) => {
+                          return (
+                            <span key={tag.id} className="me-4">
+                              {tag.name}
+                            </span>
+                          );
+                        })}
                       </div>
                     </div>
                   </div>

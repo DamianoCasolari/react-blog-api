@@ -74,7 +74,7 @@ export function AppOverlay({ showOverlay, setshowOverlay }) {
         return promise.json();
       })
       //   .then((promise) => promise.json())
-      .then((data) => console.log(data))
+      .then((data) => console.log(data, tags))
       .catch((error) => console.error("Fetch error:", error.message));
   }
 

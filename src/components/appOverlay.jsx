@@ -55,7 +55,7 @@ export function AppOverlay({ showOverlay, setshowOverlay }) {
         title: title,
         image: image,
         content: content,
-        categoryId: parseInt(category),
+        categoryId: category,
         published: isPublished,
         tags: tags,
       }),
